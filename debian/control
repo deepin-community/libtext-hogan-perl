@@ -1,0 +1,39 @@
+Source: libtext-hogan-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders:
+ Jonas Smedegaard <dr@jones.dk>,
+Section: perl
+Priority: optional
+Build-Depends:
+ debhelper-compat (= 13),
+ libclone-perl <!nocheck>,
+ libdata-visitor-perl <!nocheck>,
+ libpath-tiny-perl <!nocheck>,
+ libref-util-perl <!nocheck>,
+ libtext-trim-perl <!nocheck>,
+ libtry-tiny-perl <!nocheck>,
+ libyaml-perl <!nocheck>,
+ perl,
+Standards-Version: 4.5.0
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libtext-hogan-perl.git
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libtext-hogan-perl
+Homepage: https://metacpan.org/release/Text-Hogan
+Testsuite: autopkgtest-pkg-perl
+Rules-Requires-Root: no
+
+Package: libtext-hogan-perl
+Architecture: all
+Depends:
+ libclone-perl,
+ libref-util-perl,
+ libtext-trim-perl,
+ ${misc:Depends},
+ ${perl:Depends},
+Description: mustache templating engine statement-for-statement cloned from hogan.js
+ Text::Hogan is a statement-for-statement rewrite of hogan.js in Perl.
+ .
+ It is a mustache templating engine
+ which supports pre-compilation of your templates into pure Perl code,
+ which then renders very quickly.
+ .
+ It passes the full mustache spec.

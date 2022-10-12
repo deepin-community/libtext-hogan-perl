@@ -1,0 +1,91 @@
+libtext-hogan-perl (2.03-1) unstable; urgency=medium
+
+  [ upstream ]
+  * new release(s)
+
+  [ Debian Janitor ]
+  * use secure copyright file specification URI
+  * build-depend on debhelper-compat (not debhelper)
+  * set upstream metadata fields:
+    Bug-Database Bug-Submit Repository Repository-Browse
+
+  [ Jonas Smedegaard ]
+  * simplify source script copyright-check
+  * copyright: extend coverage
+  * use debhelper compatibility level 13 (not 12)
+  * declare compliance with Debian Policy 4.5.0
+  * relax to build-depend unversioned on libpath-tiny-perl:
+    needed version satisfied in all official Debian suites
+  * stop fallback-(build-)depend
+    on libscalar-list-utils-perl libtest-simple-perl:
+    provided by perl in all official Debian suites
+  * (build-)depend on libref-util-perl
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sun, 09 Aug 2020 09:27:39 +0200
+
+libtext-hogan-perl (2.01-1) unstable; urgency=medium
+
+  [ upstream ]
+  * New release(s).
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sat, 02 Mar 2019 20:30:36 +0100
+
+libtext-hogan-perl (1.09-1) unstable; urgency=medium
+
+  [ upstream ]
+  * New release(s).
+
+  [ Jonas Smedegaard ]
+  * Update copyright info:
+    + Bump (yes not extend) coverage for main upstream author.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Mon, 25 Feb 2019 17:38:23 +0100
+
+libtext-hogan-perl (1.07-1) unstable; urgency=medium
+
+  [ upstream ]
+  * New release(s).
+
+  [ gregor herrmann ]
+  * Update GitHub URLs to use HTTPS.
+
+  [ Jonas Smedegaard ]
+  * Simplify rules. Stop build-depend on cdbs.
+  * Stop build-depend on dh-buildinfo.
+  * Mark build-dependencies needed only for testsuite as such.
+  * Declare compliance with Debian Policy 4.3.0.
+  * Enable autopkgtest.
+  * Set Rules-Requires-Root: no.
+  * Update watch file: Rewrite usage comment.
+  * Wrap and sort control file.
+  * Update copyright info:
+    + Extend coverage of packaging.
+    + Bump (yes not extend) coverage for main upstream author.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Thu, 21 Feb 2019 16:30:47 +0100
+
+libtext-hogan-perl (1.04-2) unstable; urgency=medium
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org.
+
+  [ Jonas Smedegaard ]
+  * Update watch file: Use substitution strings.
+  * Modernize cdbs:
+    + Do copyright-check in maintainer script (not during build).
+  * Tighten lintian overrides regarding License-Reference.
+  * Declare compliance with Debian Policy 4.1.4.
+  * Update package relations:
+    + Relax to build-depend unversioned on libdata-visitor-perl
+      libtry-tiny-perl libyaml-perl: Needed versions satisfied even in
+      oldstable.
+    + Relax to (build-)depend unversioned on libclone-perl: Needed
+      version satisfied even in oldstable.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sat, 05 May 2018 16:24:38 +0200
+
+libtext-hogan-perl (1.04-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sun, 25 Dec 2016 17:44:12 +0100
